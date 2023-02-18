@@ -19,9 +19,9 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Eunji                          # the main title
+title: Soondong                          # the main title
 
-tagline: soondong2, 또또 주인의 주인   # it will display as the sub-title
+tagline: Eunji, 또또 주인의 주인   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Cheat Sheet for Room Developers
