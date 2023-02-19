@@ -61,6 +61,7 @@ SELECT
 FROM test
 WHERE x ~ '[0-9]+';
 ```
+
 |x|regexp_matches|
 |:---:|:---:|
 |100|{100}|
@@ -80,6 +81,7 @@ SELECT
 FROM test
 WHERE x ~ '[0-9]+';
 ```
+
 |x|regexp_matches|
 |:---:|:---:|
 |100|100|
