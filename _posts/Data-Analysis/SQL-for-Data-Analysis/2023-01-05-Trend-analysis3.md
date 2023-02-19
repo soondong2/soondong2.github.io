@@ -16,7 +16,7 @@ tags:
 
 <br>
 
-<서브쿼리>
+[서브쿼리]
 - 동일한 retail_sales 테이블을 `SELF JOIN` 한다.
 - `JOIN` 기준은 `sales_month`(날짜)가 같은 기준으로 한다.
 - `JOIN` 조건에 AND로 B 테이블의 `kind_of_business`가 Men, Women store만을 포함하도록 설정한다.
