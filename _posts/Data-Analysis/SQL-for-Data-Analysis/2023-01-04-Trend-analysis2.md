@@ -1,5 +1,5 @@
 ---
-title: 트랜드 분석 - 요소 비교
+title: 트렌드 분석 - 요소 비교
 date: 2023-01-04
 
 categories:
