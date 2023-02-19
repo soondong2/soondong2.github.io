@@ -1,6 +1,6 @@
 ---
 title: 트렌드 분석 - 간단한 트렌드
-date: 2023-01-02
+date: 2023-01-03
 
 categories:
   - Data Analysis
