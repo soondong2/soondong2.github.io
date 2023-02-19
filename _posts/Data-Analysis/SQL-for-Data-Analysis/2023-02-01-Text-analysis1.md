@@ -1,6 +1,6 @@
 ---
 title: 텍스트 분석
-date: 2023-02
+date: 2023-02-01
 
 categories:
   - Data Analysis
