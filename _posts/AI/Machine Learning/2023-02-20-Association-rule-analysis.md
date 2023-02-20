@@ -54,7 +54,7 @@ from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import apriori, association_rules
 ```
 
-
+## Dataset
 ```python
 dataset = [
     ['Milk', 'Onion', 'Nutmeg', 'Eggs', 'Yogurt'],
@@ -65,7 +65,7 @@ dataset = [
 ]
 ```
 
-
+## Asocitaion Rule Analysis
 ```python
 # TransactionEncoder() : 기계학습에 적합한 배열 형식으로 변환
 te = TransactionEncoder()
