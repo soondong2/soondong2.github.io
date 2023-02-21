@@ -1,5 +1,5 @@
 ---
-title: 주성분 분석(Principal Component Analysis)
+title: 주성분분석(Principal Component Analysis)
 date: 2023-02-21
 
 categories:
