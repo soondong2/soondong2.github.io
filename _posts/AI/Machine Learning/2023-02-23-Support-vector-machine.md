@@ -175,7 +175,7 @@ print(classification_report(y_test, y_pred))
 
 
 ```python
-# jerenel = 'linear'일 때만 coef_ 출력 가능
+# kernel = 'linear'일 때만 coef_ 출력 가능
 plt.figure(figsize=(10, 6))
 sns.barplot(y=X.columns.tolist(), x=svc.coef_.tolist()[0], edgecolor=(0, 0, 0))
 plt.show()
