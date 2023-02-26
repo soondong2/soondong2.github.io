@@ -1,6 +1,6 @@
 ---
 title: My Style Manager
-date: 2023-01-01
+date: 2022-08-19
 
 categories:
   - Projects
