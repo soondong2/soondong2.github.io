@@ -1,5 +1,5 @@
 ---
-title: "[PyTorch] Linear Regression"
+title: "[PyTorch] Multivariable Linear Regression"
 date: 2023-02-28
 
 categories:
