@@ -1,24 +1,30 @@
 ---
-title: My Style Manager
+title: "Fashion Recommendation System"
 date: 2023-02-26
 
 categories:
   - Projects
 tags:
+    - DL
     - AutoEncoder
     - Recommendation
 ---
 
 # Fashion Recommendation System
-[Data Information]   
+![image](https://user-images.githubusercontent.com/100760303/222645589-81d03215-5bcb-427f-b998-70d8fa406f80.png)
+![image](https://user-images.githubusercontent.com/100760303/222645691-66dbd214-6667-4696-99ab-859155ddbff3.png)
+![image](https://user-images.githubusercontent.com/100760303/222645800-dab417b3-d930-408c-b647-091bbf10855a.png)
+
+
+**[Data Information]**<br>
 Data Source: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=78   
 Raw Data Type : 720x1280x24b
 
-[Image]   
+**[Image]**<br>
 Item-Image : 16585장   
 Model-Image : 18040장
 
-[Version]   
+**[Version]**<br>
 Augmented Convolutional AE, 128x128x3
 
 ## 0. Setting
@@ -69,22 +75,11 @@ drive.mount('/content/drive')
 pip install tensorflow_addons
 ```
 
-    Requirement already satisfied: tensorflow_addons in /Users/haesik/miniforge3/envs/haesik/lib/python3.9/site-packages (0.17.1)
-    Requirement already satisfied: packaging in /Users/haesik/miniforge3/envs/haesik/lib/python3.9/site-packages (from tensorflow_addons) (21.3)
-    Requirement already satisfied: typeguard>=2.7 in /Users/haesik/miniforge3/envs/haesik/lib/python3.9/site-packages (from tensorflow_addons) (2.13.3)
-    Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /Users/haesik/miniforge3/envs/haesik/lib/python3.9/site-packages (from packaging->tensorflow_addons) (3.0.9)
-    Note: you may need to restart the kernel to use updated packages.
-    
-
 
 ```python
 pip install opencv-python
 ```
-
-    Requirement already satisfied: opencv-python in /Users/haesik/miniforge3/envs/haesik/lib/python3.9/site-packages (4.6.0.66)
-    Requirement already satisfied: numpy>=1.14.5 in /Users/haesik/miniforge3/envs/haesik/lib/python3.9/site-packages (from opencv-python) (1.21.4)
-    Note: you may need to restart the kernel to use updated packages.
-    
+   
 
 
 ```python
