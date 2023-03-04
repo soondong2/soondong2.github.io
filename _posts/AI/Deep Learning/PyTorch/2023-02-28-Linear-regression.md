@@ -6,7 +6,7 @@ categories:
   - AI
   - Deep Learning
 tags:
-    - Python
+    - ML
     - PyTorch
 ---
 
