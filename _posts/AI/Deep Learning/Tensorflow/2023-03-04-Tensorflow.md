@@ -1,5 +1,5 @@
 ---
-title: "[Tensorflow] Tensor"
+title: "[Tensorflow] Tensor Manipulation"
 date: 2023-03-04
 
 categories:
