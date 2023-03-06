@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "해시 테이블(Hash table)"
 date: 2023-03-06
 
 categories:
