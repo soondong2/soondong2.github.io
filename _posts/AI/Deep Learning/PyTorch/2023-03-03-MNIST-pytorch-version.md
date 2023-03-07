@@ -1,5 +1,5 @@
 ---
-title: "[PyTorch] MNIST"
+title: "[PyTorch] MNIST 딥러닝 예제"
 date: 2023-03-03
 
 categories:
