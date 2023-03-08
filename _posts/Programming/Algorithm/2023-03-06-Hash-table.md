@@ -76,20 +76,20 @@ menu = {
 ```
     
 ```python
-    # 해시 테이블 정의
-    hash_map = {}
+# 해시 테이블 정의
+hash_map = {}
     
-    # key : value
-    hash_map[key] = value
+# key : value
+hash_map[key] = value
     
-    # 리스트로 value를 넣어줄 경우
-    # hash_map = {key : [value1, value2]}
-    hash_map.append([value1, value2])
-    hash_map[key] = [[value1, value2]]
+# 리스트로 value를 넣어줄 경우
+# hash_map = {key : [value1, value2]}
+hash_map.append([value1, value2])
+hash_map[key] = [[value1, value2]]
     
-    # key : value로 이루어진 dictionary 정렬 방법
-    sorted(hash_map.itemps(), key=lambda x:x[0], reverse=True) # key로 내림차순 정렬
-    sorted(hash_map.itemps(), key=lambda x:x[1], reverse=False) # value로 오름차순 정렬
+# key : value로 이루어진 dictionary 정렬 방법
+sorted(hash_map.items(), key=lambda x:x[0], reverse=True) # key로 내림차순 정렬
+sorted(hash_map.items(), key=lambda x:x[1], reverse=False) # value로 오름차순 정렬
 ```
 
 ### 프로그래머스 Level3 베스트 앨범
@@ -97,13 +97,14 @@ menu = {
 def solution(genres, plays):
     answer = []
     hash_map1 = {}
-    # {장르1 : [재생 횟수, index], 장르2 : [재생 횟수, index]} 해시 테이블 만들기
-    for i, g in enumerate(genres):
-        if g in hash_map1:
-            hash_map1[g].append([plays[i], i])
-        else:
-            hash_map1[g] = [[plays[i], i]]
     
+    # {장르1 : [재생 횟수, index], 장르2 : [재생 횟수, index]} 해시 테이블 만들기
+    for i, p in enumerate(plays):
+        if genres[i] in hash_map1:
+            hash_map1[genres[i]].append([p, i])
+        else:
+            hash_map1[genres[i]] = [[p, i]]
+
     # 장르별 총 재생 횟수 계산
     hash_map2 = {}
     for k in hash_map1.keys():
@@ -111,16 +112,16 @@ def solution(genres, plays):
         for i in range(len(hash_map1[k])):
             total += hash_map1[k][i][0]
         hash_map2[k] = total
-
+    
     # 장르별 총 재생 횟수가 큰 순으로 정렬
     genre_rank = sorted(hash_map2.items(), key=lambda x:x[1], reverse=True)
-    print(genre_rank)
+    
     # 장르 내에서 각각의 재생 횟수가 큰 순으로 정렬
     for g in genre_rank:
         sorted_rank = sorted(hash_map1[g[0]], key=lambda x:x[0], reverse=True)[:2]
-        # 고유 번호
-        for i in sorted_rank:
-            answer.append(i[1])
+        # 고유 번호 추출
+        for r in sorted_rank:
+            answer.append(r[1])
     return answer
 ```
 
