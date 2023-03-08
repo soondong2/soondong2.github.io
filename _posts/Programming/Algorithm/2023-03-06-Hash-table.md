@@ -71,8 +71,8 @@ menu = {
 - print()를 하면 해시값이 출력된다.
     
 ```python
-    h = hash()
-    print(h)
+h = hash()
+print(h)
 ```
     
 ```python
