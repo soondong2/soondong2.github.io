@@ -11,6 +11,7 @@ tags:
 ---
 
 
+
 ## 과소적합(Underfitting)
 - 학습 데이터를 충분히 학습하지 않아 성능이 매우 안 좋은 경우
 - 모델이 지나치게 단순한 경우
@@ -41,9 +42,10 @@ tags:
 - 규제화(Regularization)
 - 드롭아웃(Dropout)
 
-### 1. 모델 크기 조절
+### 1.모델 크기 조절
 #### 모델 크기 감소
 - 모델의 크기를 줄인하는 것은 학습 파라미터의 수를 줄이는 것
+
 #### 모델 크기 증가
 - 모델의 크기를 증가시키는 것은 학습 파라미터의 수를 늘리는 것
 
@@ -123,7 +125,7 @@ model = Model(inputs=inputs, outputs=x)
 model.summary()
 ```
 
-    Model: "model_12"
+    Model: "model_17"
     _________________________________________________________________
      Layer (type)                Output Shape              Param #   
     =================================================================
@@ -146,14 +148,6 @@ model.summary()
 
 
 ```python
-plot_model(model, show_shapes=True)
-```
-
-
-
-
-
-```python
 # Sequential API
 model = Sequential([
     Dense(30, kernel_initializer='he_normal', input_shape=[10, 10], name='dens1'),
@@ -164,29 +158,23 @@ model = Sequential([
 model.summary()
 ```
 
-    Model: "sequential_2"
+    Model: "sequential_7"
     _________________________________________________________________
      Layer (type)                Output Shape              Param #   
     =================================================================
      dens1 (Dense)               (None, 10, 30)            330       
                                                                      
-     leaky_re_lu_13 (LeakyReLU)  (None, 10, 30)            0         
+     leaky_re_lu_14 (LeakyReLU)  (None, 10, 30)            0         
                                                                      
      dens2 (Dense)               (None, 10, 1)             31        
                                                                      
-     activation_2 (Activation)   (None, 10, 1)             0         
+     activation_5 (Activation)   (None, 10, 1)             0         
                                                                      
     =================================================================
     Total params: 361
     Trainable params: 361
     Non-trainable params: 0
     _________________________________________________________________
-    
-
-
-```python
-plot_model(model, show_shapes=True)
-```
     
 
 ### 4. 배치 정규화(Batch Normalization)
@@ -213,7 +201,7 @@ model = Model(inputs=inputs, outputs=x)
 model.summary()
 ```
 
-    Model: "model_11"
+    Model: "model_23"
     _________________________________________________________________
      Layer (type)                Output Shape              Param #   
     =================================================================
@@ -236,15 +224,6 @@ model.summary()
 
 
 ```python
-plot_model(model, show_shapes=True)
-```
-
-    
-
-
-
-
-```python
 # Sequential API
 model = Sequential()
 
@@ -254,16 +233,16 @@ model.add(Activation('relu'))
 model.summary()
 ```
 
-    Model: "sequential_3"
+    Model: "sequential_11"
     _________________________________________________________________
      Layer (type)                Output Shape              Param #   
     =================================================================
-     dense_9 (Dense)             (None, 32)                25120     
+     dense_12 (Dense)            (None, 32)                25120     
                                                                      
-     batch_normalization (BatchN  (None, 32)               128       
-     ormalization)                                                   
+     batch_normalization_3 (Batc  (None, 32)               128       
+     hNormalization)                                                 
                                                                      
-     activation_3 (Activation)   (None, 32)                0         
+     activation_7 (Activation)   (None, 32)                0         
                                                                      
     =================================================================
     Total params: 25,248
@@ -271,14 +250,6 @@ model.summary()
     Non-trainable params: 64
     _________________________________________________________________
     
-
-
-```python
-plot_model(model, show_shapes=True)
-```
-
-
-
 
 ### 5. 규제화(Regularization)
 - 과대적합 방지하는 방법
@@ -295,38 +266,6 @@ from tensorflow.keras.regularizers import l1, l2, l1_l2
 #### L2 규제
 - `kernel_regularizer=l2(0.001)`
 
-```python
-# Sequential API
-l2_model = Sequential([
-    Dense(units=16, kernel_regularizer=l2(0.001), activation='relu', input_shape=(10000, ), name='dense1'),
-    Dense(units=16, kernel_regularizer=l2(0.001), activation='relu', name='dense2'),
-    Dense(units=1, activation='sigmoid', name='output')
-])
-model.summary()
-```
-
-    Model: "model_15"
-    _________________________________________________________________
-     Layer (type)                Output Shape              Param #   
-    =================================================================
-     input (InputLayer)          [(None, 10000)]           0         
-                                                                     
-     dense1 (Dense)              (None, 16)                160016    
-                                                                     
-     dense2 (Dense)              (None, 16)                272       
-                                                                     
-     output (Dense)              (None, 1)                 17        
-                                                                     
-    =================================================================
-    Total params: 160,305
-    Trainable params: 160,305
-    Non-trainable params: 0
-    _________________________________________________________________
-    
-
-```python
-plot_model(model, show_shapes=True)
-```
 
 ```python
 # 함수형 API
@@ -339,7 +278,7 @@ model = Model(inputs=inputs, outputs=x)
 model.summary()
 ```
 
-    Model: "model_16"
+    Model: "model_22"
     _________________________________________________________________
      Layer (type)                Output Shape              Param #   
     =================================================================
@@ -358,18 +297,39 @@ model.summary()
     _________________________________________________________________
     
 
+
 ```python
-plot_model(model, show_shapes=True)
+# Sequential API
+l2_model = Sequential([
+    Dense(units=16, kernel_regularizer=l2(0.001), activation='relu', input_shape=(10000, ), name='dense1'),
+    Dense(units=16, kernel_regularizer=l2(0.001), activation='relu', name='dense2'),
+    Dense(units=1, activation='sigmoid', name='output')
+])
+model.summary()
 ```
 
-
-
-
+    Model: "model_22"
+    _________________________________________________________________
+     Layer (type)                Output Shape              Param #   
+    =================================================================
+     input (InputLayer)          [(None, 10000)]           0         
+                                                                     
+     dense1 (Dense)              (None, 16)                160016    
+                                                                     
+     dense2 (Dense)              (None, 16)                272       
+                                                                     
+     output (Dense)              (None, 1)                 17        
+                                                                     
+    =================================================================
+    Total params: 160,305
+    Trainable params: 160,305
+    Non-trainable params: 0
+    _________________________________________________________________
+    
 
 #### L1 규제
 - `kernel_regularizer=l1(0.0001)`
-- L2 규제에서 사용한 방법과 마찬가지로 사용하면 됨
-- 
+
 #### L1 + L2
 - `kernel_regularizer=l1_l2(l1=0.0001, l2=0.0001)`
 
@@ -398,7 +358,7 @@ model = Model(inputs=inputs, outputs=x)
 model.summary()
 ```
 
-    Model: "model_14"
+    Model: "model_20"
     _________________________________________________________________
      Layer (type)                Output Shape              Param #   
     =================================================================
@@ -421,14 +381,7 @@ model.summary()
     _________________________________________________________________
     
 
-
-```python
-plot_model(model, show_shapes=True)
-```
-    
-
-
-
 ### 7. 하이퍼 파라미터
 - 사람이 직접 설정해야 하는 매개변수
 - `Learning Rete`, `Epochs`, `Mini Batch Size`, `Validation Data`
+
