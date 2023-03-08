@@ -242,6 +242,6 @@ model.fit(X_train, y_train,
 
 
 ```python
-%tensorboard --logdir {log_dir} por 8000
+%tensorboard --logdir {log_dir} port 8000
 ```
 ![image](https://user-images.githubusercontent.com/100760303/223606802-51b9a612-552f-40b5-8531-e5932d8978d6.png)
