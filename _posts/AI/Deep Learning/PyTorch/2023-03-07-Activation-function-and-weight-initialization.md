@@ -1,5 +1,5 @@
 ---
-title: "[PyTorch] DNN"
+title: "[PyTorch] 활성화 함수, 손실 함수, 옵티마이저, 가중치 초기화 "
 date: 2023-03-07
 
 categories:
@@ -10,8 +10,6 @@ tags:
     - PyTorch
 ---
 
-
-## DNN
 
 
 ```python
@@ -60,7 +58,7 @@ data_loader = torch.utils.data.DataLoader(dataset=mnist_train,
                                           drop_last=True)
 ```
 
-### Activation Function
+## Activation Function
 - `torch.nn.relu` : ReLU
 - `torch.nn.sigmoid` : Sigmoid
 - `torch.nn.Leaky_relu` : Leaky ReLU
@@ -77,7 +75,7 @@ linear3 = torch.nn.Linear(256, 10, bias=True)
 relu = torch.nn.ReLU()
 ```
 
-### 가중치 초기화
+## 가중치 초기화
 - `torch.nn.init.normal_` : 기본적인 방법
 - `torch.nn.init.xavier_uniform_` : Xvier
 
@@ -110,13 +108,13 @@ torch.nn.init.normal_(linear3.weight)
 model = torch.nn.Sequential(linear1, relu, linear2, relu, linear3).to(device)
 ```
 
-### Loss & Optimizer
-#### Loss
+## Loss & Optimizer
+### Loss
 - `torch.nn.BCELoss` : 이진 분류
 - `torch.nn.CrossEntropyLoss` : 다중 클래스 분류
 - `torch.nn.MSELoss` : MSE
 
-#### Optimizer
+### Optimizer
 - `torch.optim.Adam` : Adam
 - `torch.optim.SGD` : SGD
 - `torch.optim.RMSprop` : RMSprop
