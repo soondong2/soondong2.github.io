@@ -104,7 +104,7 @@ print(batch_size, height, width, channels)
     2 427 640 3
     
 
-## 패딩과 스트라이드
+## Padding & Stride
 - 필터(커널) 사이즈와 함께 입력 이미지와 출력 이미지의 사이즈를 결정하기 위해 사용
 - 사용자가 결정할 수 있음
 
@@ -122,7 +122,7 @@ print(batch_size, height, width, channels)
 
 <img src="https://miro.medium.com/max/395/1*1okwhewf5KCtIPaFib4XaA.gif" width="300">
 
-### Stride
+### 스트라이드(Stride)
 - 필터를 적용하는 `간격`을 의미
 
 ### 출력 데이터의 크기
