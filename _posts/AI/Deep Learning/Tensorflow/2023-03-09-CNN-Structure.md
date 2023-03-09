@@ -126,18 +126,8 @@ print(batch_size, height, width, channels)
 - 필터를 적용하는 `간격`을 의미
 
 ### 출력 데이터의 크기
-
-  $\qquad OH = \frac{H + 2P - FH}{S} + 1 $ 
-  
-  $\qquad OW = \frac{W + 2P - FW}{S} + 1 $ 
-
-  - 입력 크기 : $(H, W)$
-  - 필터 크기 : $(FH, FW)$
-  - 출력 크기 : $(OH, OW)$
-  - 패딩, 스트라이드 : $P, S$
-- 위 식의 값에서 $\frac{H + 2P - FH}{S}$ 또는 $\frac{W + 2P - FW}{S}$가 정수로 나누어 떨어지는 값이어야 함
+- 정수로 나누어 떨어지는 값이어야 함
 - 정수로 나누어 떨어지지 않으면, 패딩, 스트라이드 값을 조정하여 정수로 나누어 떨어지게 해야함
-  
   
 
 
@@ -151,10 +141,6 @@ conv = Conv2D(filters=16, kernel_size=3, padding='same', strides=1, activation='
 - 모델이 물체의 주요한 특징을 학습할 수 있도록 해줌
 - 일반적으로 `stride=2`, `kernel_size=2`를 통해 특징맵의 크기를 절반으로 줄이는 역할
 - 출력 데이터의 사이즈 계산은 컨볼루션 연산과 동일
-
-  $\quad OH = \frac{H + 2P - FH}{S} + 1 $ 
-  
-  $\quad OW = \frac{W + 2P - FW}{S} + 1 $ 
 
 <img src="https://cs231n.github.io/assets/cnn/maxpool.jpeg" width="600">
 
