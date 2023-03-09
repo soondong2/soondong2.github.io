@@ -248,7 +248,7 @@ model3.evaluate(X_test, y_test)
 
 
 
-###이미지 보강(Image Augmentation)
+### 이미지 보강(Image Augmentation)
 
 - 주요 인자 참고: https://keras.io/ko/preprocessing/image/
 
