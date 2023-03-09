@@ -21,7 +21,7 @@ else:
   print(gpu_info)
 ```
 
-아래는 추가 메모리 사용 방법이라고 한다.
+아래는 추가 메모리 사용 방법이라고 한다. 마찬가지로 런타임 유형 변경에서 변경 후 실행시켜주면 된다고 한다.
 ```python
 from psutil import virtual_memory
 ram_gb = virtual_memory().total / 1e9
@@ -32,3 +32,5 @@ if ram_gb < 20:
 else:
   print('You are using a high-RAM runtime!')
 ```
+
+![image](https://user-images.githubusercontent.com/100760303/223986363-86e91bd8-e0f4-4d36-a29e-de897d8f7874.png)
