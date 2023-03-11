@@ -6,8 +6,8 @@ categories:
   - AI
   - Deep Learning
 tags:
-    - DL
-    - PyTorch
+  - DL
+  - PyTorch
 ---
 
 ## 학습 목표
