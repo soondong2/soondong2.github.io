@@ -1,5 +1,5 @@
 ---
-title: "[CV] 객체 탐지(Object Detection) - YOLOv5"
+title: "[CV] 객체 탐지(Object Detection)"
 date: 2023-03-14
 
 categories:
