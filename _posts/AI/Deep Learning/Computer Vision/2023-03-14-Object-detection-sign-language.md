@@ -222,7 +222,9 @@ Results saved to runs/detect/exp3
 ```
 Results saved to runs/detect/exp16
 
+![test (1)](https://user-images.githubusercontent.com/100760303/224994561-dd02ad63-e1dc-470a-bb40-0dd2f5623b03.gif)
 
+용량 제한으로 크기를 강제로 줄였더니 화질이 이상해졌다..
   
 - Webcam
 
