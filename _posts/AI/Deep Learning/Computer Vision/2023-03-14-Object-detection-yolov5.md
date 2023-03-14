@@ -150,25 +150,11 @@ tags:
 ls
 ```
 
-    benchmarks.py    [0m[01;34mdata[0m/       LICENSE          requirements.txt  tutorial.ipynb
-    CITATION.cff     detect.py   [01;34mmodels[0m/          [01;34msegment[0m/          [01;34mutils[0m/
-    [01;34mclassify[0m/        export.py   README.md        setup.cfg         val.py
-    CONTRIBUTING.md  hubconf.py  README.zh-CN.md  train.py
-    
-
 
 ```python
 # 필요한 requrements 설치
 %pip install -qr requirements.txt
 ```
-
-    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m184.3/184.3 KB[0m [31m5.7 MB/s[0m eta [36m0:00:00[0m
-    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.1/1.1 MB[0m [31m30.5 MB/s[0m eta [36m0:00:00[0m
-    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m62.7/62.7 KB[0m [31m8.5 MB/s[0m eta [36m0:00:00[0m
-    [?25h[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-    ipython 7.9.0 requires jedi>=0.10, which is not installed.
-    cvxpy 1.2.3 requires setuptools<=64.0.2, but you have setuptools 67.6.0 which is incompatible.[0m[31m
-    [0m
 
 
 ```python
@@ -190,20 +176,6 @@ Image(filename='data/images/bus.jpg', width=500)
 ```python
 !python detect.py --weights yolov5s.pt --img 640 --conf 0.25 --source data/images/
 ```
-
-    [34m[1mdetect: [0mweights=['yolov5s.pt'], source=data/images/, data=data/coco128.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
-    YOLOv5 🚀 v7.0-120-g3e55763 Python-3.9.16 torch-1.13.1+cu116 CUDA:0 (NVIDIA A100-SXM4-40GB, 40514MiB)
-    
-    Downloading https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5s.pt to yolov5s.pt...
-    100% 14.1M/14.1M [00:00<00:00, 122MB/s] 
-    
-    Fusing layers... 
-    YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients
-    image 1/2 /content/yolov5/data/images/bus.jpg: 640x480 4 persons, 1 bus, 16.3ms
-    image 2/2 /content/yolov5/data/images/zidane.jpg: 384x640 2 persons, 2 ties, 17.4ms
-    Speed: 0.5ms pre-process, 16.8ms inference, 19.0ms NMS per image at shape (1, 3, 640, 640)
-    Results saved to [1mruns/detect/exp[0m
-    
 
 
 ```python
