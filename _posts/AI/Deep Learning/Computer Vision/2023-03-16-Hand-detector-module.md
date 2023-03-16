@@ -196,6 +196,9 @@ cv2.destroyAllWindows() # 모든 창 닫기
 
 ## Results
 ![캡처](https://user-images.githubusercontent.com/100760303/225493139-399d6693-50b3-421c-88b3-443516b2f61a.PNG)
+
 ![캡처1](https://user-images.githubusercontent.com/100760303/225493167-fbd8da5e-efe1-4ec2-9664-a69a80aa9e1f.PNG)
+
 ![캡처2](https://user-images.githubusercontent.com/100760303/225493178-f228d242-3878-44da-9976-7f9a5d9d76a5.PNG)
+
 
