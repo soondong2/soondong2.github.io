@@ -46,7 +46,7 @@ data.head()
     (11823, 3)
     
 
-      <div>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -89,7 +89,6 @@ data.head()
     </tr>
   </tbody>
 </table>
-</div>
 
 <br> 
 
