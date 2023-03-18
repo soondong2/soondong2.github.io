@@ -45,8 +45,7 @@ data.head()
 
     (11823, 3)
     
-  <div id="df-55b3ba5f-af2d-4e23-b588-6635b77ef177">
-    <div class="colab-df-container">
+
       <div>
 <table border="1" class="dataframe">
   <thead>
