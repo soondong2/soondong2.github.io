@@ -356,3 +356,7 @@ print('감정 예측 Class : ', pred_class.numpy())
     감정 예측 점수 :  [[3.8029467e-07 1.0989698e-08 9.9999964e-01]]
     감정 예측 Class :  [2]
     
+### Model 구조 해석
+Functional Model에 대한 이해를 높이기 위해 공부한 사진을 첨부하였다.
+
+![KakaoTalk_20230320_190844042](https://user-images.githubusercontent.com/100760303/226325255-7c2c3b65-10fc-4bb1-beeb-f3f71116ae3e.jpg)
