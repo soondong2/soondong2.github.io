@@ -1,5 +1,5 @@
 ---
-title: "[Chatbot] Chapter6 개체명 인식을 위한 양방향 LSTM 모델1"
+title: "[Chatbot] Chapter6 RNN"
 date: 2023-03-20
 
 categories:
@@ -9,8 +9,6 @@ tags:
   - NLP
   - Chatbot
 ---
-
-# 개체명 인식을 위한 양방향 LSTM 모델
 
 ## RNN
 특정 범위만큼의 sin 파형 시퀀스를 학습해 다음 스텝의 파형을 예측하는 RNN 모델 구현
