@@ -9,9 +9,7 @@ tags:
   - NLP
   - Chatbot
 ---
-```python
-!jupyter nbconvert --to markdown LSTM.ipynb
-```
+
 
 ## 양방향 LSTM
 - RNN이나 LSTM은 일반 신경망과 다르게 시퀀스 또는 시계열 데이터 처리에 특화되어 은닉층에서 과거의 정보를 기억할 수 있음
