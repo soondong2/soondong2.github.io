@@ -4,7 +4,6 @@ date: 2023-03-01
 
 categories:
   - Review
-  - Monthly
 tags:
    - Review
 ---
