@@ -32,3 +32,28 @@ permutations(arr, n)
 
 ### 5. DFS/BFS
 난이도가 있는 문제로 `완전탐색 + DFS/BFS` 문제가 나온다. 예를 들어, 단순히 길을 찾는 문제라면 DFS/BFS만 이용해도 충분하지만, 주어진 도로에 장애물을 설치하거나 목적지를 추가하는 등의 추가적인 작업이 필용한 경우에 이를 완전 탐색으로 해결하고 나서 DFS/BFS를 이용해야 한다.
+
+## 활용 예시
+### 프로그래머스 Level1 모의고사
+```python
+def solution(answers):
+    answer = []
+    one = [1, 2, 3, 4, 5]
+    two = [2, 1, 2, 3, 2, 4, 2, 5]
+    three = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
+    
+    score = [0, 0, 0]
+    for i, a in enumerate(answers):
+        if one[i % len(one)] == a:
+            score[0] += 1
+        if two[i % len(two)] == a:
+            score[1] += 1
+        if three[i % len(three)] == a:
+            score[2] += 1
+    
+    for i in range(len(score)):
+        if max(score) == score[i]:
+            answer.append(i + 1)
+            
+    return answer
+```
