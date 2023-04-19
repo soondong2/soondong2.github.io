@@ -8,6 +8,7 @@ categories:
 tags:
   - MySQL
   - Python
+  - Chatbot
 ---
 
 
