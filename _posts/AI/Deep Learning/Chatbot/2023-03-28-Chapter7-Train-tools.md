@@ -8,6 +8,7 @@ categories:
 tags:
   - MySQL
   - Python
+  - Chatbot
 ---
 
 ## 챗봇 학습툴 만들기
