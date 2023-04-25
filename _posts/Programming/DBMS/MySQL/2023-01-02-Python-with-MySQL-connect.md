@@ -1,12 +1,14 @@
 ---
-title: Python으로 MySQL 연결하기
+title: "[MySQL] Python으로 MySQL 연결하기"
 date: 2023-01-02
 
 categories:
-  - Programming
-  - SQL
+  - DBMS
+  - MySQL
 tags:
-    - SQL
+  - Database
+  - MySQL
+  - Python
 ---
 
 ## 설치 및 연결
