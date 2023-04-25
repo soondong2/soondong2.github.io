@@ -1,12 +1,13 @@
 ---
-title: generate_series
+title: "[PostgreSQL] generate_series"
 date: 2023-01-18
 
 categories:
-  - Programming
-  - SQL
+  - DBMS
+  - PostgreSQL
 tags:
-    - SQL
+  - Database
+  - PostgreSQL
 ---
 
 ## generate_series
