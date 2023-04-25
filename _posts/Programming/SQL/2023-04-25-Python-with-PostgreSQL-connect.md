@@ -20,6 +20,7 @@ import psycopg2
 
 ## SQL 결과를 DataFrame으로 불러오기
 - {} 안에 비밀번호 입력
+
 ```python
 conn_string = 'postgresql://postgres:{Password}@localhost:5432/postgres'
 postgres_engine = create_engine(conn_string)
