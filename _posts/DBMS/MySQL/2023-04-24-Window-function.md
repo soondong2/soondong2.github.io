@@ -1,12 +1,14 @@
 ---
-title: 윈도우 함수(Window Function)
+title: "[MySQL] 윈도우 함수(Window Function)"
 date: 2023-04-24
 
 categories:
-  - Programming
-  - SQL
+  - DBMS
+  - MySQL
 tags:
-  - SQL
+  - Database
+  - MySQL
+  - PostgreSQL
 ---
 
 ## 윈도우 함수(Window Function)
