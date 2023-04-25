@@ -26,6 +26,7 @@ postgres_engine = create_engine(conn_string)
 ```
 
 - `"`을 활용해 쿼리를 작성해주어야 한다.
+
 ```python
 query = """
 SELECT * FROM Database.table;
