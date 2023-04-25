@@ -3,7 +3,7 @@ title: "[DBMS] 데이터 모델링"
 date: 2023-04-25
 
 categories:
-  - DMBS
+  - DBMS
   - Database
 tags:
   - Database
