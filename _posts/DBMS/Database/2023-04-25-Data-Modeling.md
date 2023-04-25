@@ -1,6 +1,6 @@
 ---
 title: "[DBMS] 데이터 모델링"
-date: 2024-04-25
+date: 2023-04-25
 
 categories:
   - DMBS
