@@ -1,12 +1,14 @@
 ---
-title: WINDOWING절
+title: "[MySQL] WINDOWING절"
 date: 2023-04-24
 
 categories:
-  - Programming
-  - SQL
+  - DBMS
+  - MySQL
 tags:
-  - SQL
+  - Database
+  - MySQL
+  - PostgreSQL
 ---
 
 ## Window Function
