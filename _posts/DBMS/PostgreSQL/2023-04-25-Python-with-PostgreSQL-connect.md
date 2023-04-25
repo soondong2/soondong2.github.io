@@ -1,13 +1,14 @@
 ---
-title: Python으로 PostgreSQL 연결하기
+title: "[PostgreSQL] Python으로 PostgreSQL 연결하기"
 date: 2023-04-25
 
 categories:
-  - Programming
-  - SQL
-tags:
-  - Python
+  - DBMS
   - PostgreSQL
+tags:
+  - Database
+  - PostgreSQL
+  - Python
 ---
 
 ## Library Call
