@@ -1,5 +1,5 @@
 ---
-title: "[PostgreSQL] 날짜 데이터 함수"
+title: "[PostgreSQL] 날짜 데이터 함수(DATE_PART, DATE_TRUNC)"
 date: 2023-04-26
 
 categories:
