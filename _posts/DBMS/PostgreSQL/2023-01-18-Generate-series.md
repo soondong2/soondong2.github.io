@@ -24,6 +24,7 @@ FROM generate_series(start, stop, step)
 SELECT generate_series AS period
 FROM generate_series(0, 10, 1)
 ```
+
 |period|
 |:---:|
 |0|
