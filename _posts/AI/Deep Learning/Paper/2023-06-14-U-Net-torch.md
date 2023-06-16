@@ -153,10 +153,6 @@ plt.title('input')
 
 plt.show()
 ```
-
-
-    
-![png](U_Netipynb_files/U_Netipynb_11_0.png)
     
 
 
@@ -175,9 +171,6 @@ plt.tight_layout()
 plt.show()
 ```
 
-
-    
-![png](U_Netipynb_files/U_Netipynb_12_0.png)
     
 ## 2. U-Net Architecture
 
@@ -369,11 +362,6 @@ plt.show()
 ```
 
 
-    
-![png](U_Netipynb_files/U_Netipynb_18_0.png)
-    
-
-
 ### 3-2. Transform
 - ToTensor : numpy에서 tensor로 데이터 type을 변경
 - Normalization : 데이터 정규화
@@ -447,12 +435,6 @@ plt.title('input')
 plt.tight_layout()
 plt.show()
 ```
-
-
-    
-![png](U_Netipynb_files/U_Netipynb_21_0.png)
-    
-
 
 ## 4. Network Save and Load
 
@@ -748,6 +730,4 @@ plt.title('output')
 plt.show()
 ```
 
-
-    
-![png](U_Netipynb_files/U_Netipynb_34_0.png)
+<img width="669" alt="image" src="https://github.com/soondong2/soondong2.github.io/assets/100760303/0766661a-5c66-4a0d-9fdf-7ec83d26d981">
