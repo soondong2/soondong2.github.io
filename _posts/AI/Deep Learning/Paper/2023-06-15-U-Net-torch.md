@@ -619,7 +619,7 @@ for epoch in range(st_epoch + 1, num_epoch + 1):
     VALID: EPOCH 0050 / 0050 | BATCH 0001 / 0001 | LOSS 0.1970
 
 
-## 5. Evaluation
+## 6. Evaluation
 
 
 ```python
