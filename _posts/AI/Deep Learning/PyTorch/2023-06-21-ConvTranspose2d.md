@@ -106,6 +106,18 @@ Result:  tensor([[[[ 0.1000,  0.4000,  1.0000,  1.6000,  1.7000,  1.2000],
           [20.9000, 50.9000, 90.2000, 92.3000, 71.5000, 40.8000],
           [18.0000, 40.9000, 68.8000, 70.3000, 52.2000, 28.8000]]]],
        grad_fn=<ConvolutionBackward0>)
-       
-## 참고 자료
-https://cumulu-s.tistory.com/29
+
+해당 결과만으로는 실제 작동 방식을 알 수 없기에 자세히 알아보자. 먼저 Input은 2 x 3 형태의 tensor이다. 이를 parameter를 이용해서 단순히 곱해준다. 따라서 다음과 같은 결과를 볼 수 있다.
+
+<img width="685" alt="스크린샷 2023-06-21 오후 8 53 53" src="https://github.com/soondong2/soondong2.github.io/assets/100760303/0bad95a1-23d4-4596-af56-d6164b4ed9cf">
+
+위의 과정을 2, 3, 4, 5, 6에 대해 모두 동일하게 거친다.
+
+<img width="685" alt="스크린샷 2023-06-21 오후 8 55 06" src="https://github.com/soondong2/soondong2.github.io/assets/100760303/96c89d85-0a36-4eb0-bbf1-0ed99c4dbbfc">
+
+그렇게 되면 위에서 파이썬을 통해 나온 결과와 일치함을 확인할 수 있다.
+
+## 정리
+1. nn.ConvTranspose2d를 만들 때 input 값이 channel 수와 설정한 out_channel 수, kernel_size를 고려하여 weight를 만든다. 즉, weight의 크기는 (input_channel, output_channel, kernel_size, kernel_size)가 된다.
+2. input의 각 원소별로 weight와 곱해준다. 만약 stride가 1보다 크다면, 그 값만큼 이동하면서 만들어준다.
+3. 나온 모든 결과값을 element-wise하게 더하여 결과를 낸다.
